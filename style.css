@@ -1,0 +1,39 @@
+.parentcontainer {
+  /* background: blue; */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+}
+
+.boxes {
+  /* border: 3px solid; */
+  /* display: inline-block; */
+  width: 400px;
+  box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.953);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.boxes .textcontent {
+  padding: 20px;
+  font-size: 20px;
+}
+
+@media only screen and(max-width:768px) {
+  .parentcontainer {
+    background: blue;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .boxes {
+    border: 3px solid;
+    /* display: inline-block; */
+    width: 400px;
+  }
+}
